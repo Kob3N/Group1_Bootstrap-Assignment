@@ -6,10 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
     <title>Bootstrap Assignment</title>
 </head>
-<body class="container-fluid">
-   <section class="row">
+<body class="container-fluid ps-0 bg-light min-vh-100">
+   <section class="row p-0 d-flex">
+    <!-- NAVIGATION -->
         <nav class="col-2 bg-dark px-0 mb-0 position-fixed h-100 visible">
             <div class="navbar-brand h-6 d-flex flex-row ms-4 mt-5 mb-5 " >
                 <img  src="assets/images/logo.png" width="32" height="32" alt="logo" class="">
@@ -109,10 +111,82 @@
                 </li>
               </ul>
         </nav>
-        <main class="col-10">
-            
-        </main>
-   </section>
+        <!-- MAIN PART -->
+        <section class="col-2"></section>
+        <section class="col-10 vh-100 d-flex flex-column justify-content-between p-0 ">
+            <!-- header-->
+            <header class="d-flex justify-content-between mx-4 p-0 " >
+              <ul class="row d-flex justify-content-around w-100 ">
+                <li class="col-1 h4 mt-5">
+                  Overview
+                </li>
+                <li class="col-8 mt-5 " id="emptyList"></li>
+                
+                <li class="col-1 mt-5 border-end d-flex g-0 justify-content-end px-2">
+                  <svg class="mx-2"  xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 16 16" fill="none">
+                    <g clip-path="url(#clip0_584_242)">
+                      <circle cx="6.5" cy="6.5" r="5.75" stroke="#C5C7CD" stroke-width="1.5"/>
+                      <path d="M11 11L15 15" stroke="#C5C7CD" stroke-width="1.5" stroke-linecap="round"/>
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_584_242">
+                        <rect width="16" height="16" fill="white"/>
+                      </clipPath>
+                    </defs>
+                  </svg>
+
+                  <svg class="mx-2" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 19 18" fill="none">
+                    <path d="M7.99999 19C9.10374 19 9.99905 18.1047 9.99905 17H6.00093C6.00093 18.1047 6.89624 19 7.99999 19ZM14.7309 14.3216C14.1272 13.6728 12.9975 12.6969 12.9975 9.5C12.9975 7.07188 11.295 5.12812 8.99937 4.65125V4C8.99937 3.44781 8.55187 3 7.99999 3C7.44812 3 7.00062 3.44781 7.00062 4V4.65125C4.70499 5.12812 3.00249 7.07188 3.00249 9.5C3.00249 12.6969 1.8728 13.6728 1.26905 14.3216C1.08155 14.5231 0.998429 14.7641 0.999991 15C1.00343 15.5125 1.40562 16 2.00312 16H13.9969C14.5944 16 14.9969 15.5125 15 15C15.0016 14.7641 14.9184 14.5228 14.7309 14.3216Z" fill="#C5C7CD"/>
+                    <circle cx="13" cy="5" r="3.75" fill="#3751FF" stroke="#F7F8FC" stroke-width="1.5"/>
+                  </svg>
+                </li>
+                
+                <li class="col-2 ms-0 d-flex mt-4 d-flex "> 
+                  <p class="mt-4 h6">
+                    Jones Ferdinand 
+                  </p>
+                  <img  class="profile mx-1 mt-2">
+                </li>
+                
+              </ul>
+            </header> 
+            <main class="container-fluid d-flex  flex-column ">
+                <section class="row mx-4 my-1 d-flex align-items-start ">
+              
+                  <section class="col  bg-white border border-2 rounded p-3 m-1">
+                    <div class="card-body ">
+                      <h4 class="card-title text-center  opacity-50">Unresolved </h4>
+                      <h2 class="card-text text-center  ">60</h2>
+                    </div>
+                  </section>
+  
+                  <section class="col bg-white  border border-2 rounded p-3 m-1 ">
+                    <div class="card-body ">
+                      <h4 class="card-title text-center  opacity-50">Overdue</h4>
+                      <h2 class="card-text text-center ">16</h2>
+                    </div>
+                  </section>
+  
+                  <section class="col  bg-white border border-2 rounded p-3 m-1" >
+                    <div class="card-body">
+                      <h4 class="card-title text-center  opacity-50">Open</h4>
+                      <h2 class="card-text text-center "> 43 </h2>
+                    </div>
+                  </section> 
+  
+                  <section class="col  bg-white border border-2 rounded p-3 m-1" >
+                    <div class="card-body ">
+                      <h4 class="card-title text-center  opacity-50">On hold</h4>
+                      <h2 class="card-text text-center ">64</h2>
+                    </div>
+                  </section>
+  
+                </section>
+                
+            </main>
+        </section>
+     </section>
+<!-- KOBY WHEN YOU ADD STUFF, the cards will automatically move up, right now its in the bottom i dont know why -->
     
 </body>
 </html>

@@ -1,0 +1,9 @@
+.profile{
+    border-radius: 75%;
+    background-image:url(../images/profile.png);
+    background-position: center;
+    background-size: cover;
+    width: 3vw;
+    height: 3vw;
+ 
+}
